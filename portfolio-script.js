@@ -1,4 +1,4 @@
-/* Portfolio Script - Interactive animations and interactions */
+/* G/* Portfolio Script - Interactive animations and interactions */
 
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile Navigation Toggle
@@ -210,4 +210,27 @@ window.addEventListener('resize', function() {
   if (window.innerWidth > 768 && nav) {
     nav.classList.remove('active');
   }
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  let start = 0;
+  const target = +counter.dataset.target;
+  const speed = 100;
+
+  const update = () => {
+    start++;
+    counter.innerText = start;
+    if (start < target) {
+      setTimeout(update, speed);
+    }
+  };
+  update();
 });
+<script>
+  const btn = document.getElementById("themeBtn");
+
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    btn.textContent = document.body.classList.contains("dark")
+      ? "☀️"
+      : "🌙";

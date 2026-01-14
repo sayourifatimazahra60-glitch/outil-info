@@ -1118,4 +1118,99 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}.btn-cv {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #f37021; /* orange */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #d85f1c;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}.info-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.info-card h2 {
+  color: #f37021;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}/* Bouton dark mode */
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Mode sombre */
+body.dark-mode {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+/* Cartes en dark mode */
+body.dark-mode .info-card {
+  background: #1e1e1e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Titres */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #ffffff;
+}
+.theme-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  background: #f37021;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Dark mode */
+.dark {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+.dark .card-modern {
+  background-color: #1e1e1e;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.dark .card-text {
+  color: #cccccc;
+
